@@ -11,6 +11,10 @@ p {
   margin-bottom: 0;
 }
 
+i {
+  color: rgb(244, 228, 6)
+}
+
 h2, h3, h4 {
   margin: 0;
 }
@@ -56,7 +60,7 @@ img {
 }
 
 .site-content {
-  max-width: min(900px, 90vw);
+  max-width: min(600px, 90vw);
   gap: 40px;
   padding: 20px;
   margin: 0 !important;
@@ -77,14 +81,14 @@ img {
     width: 100vw;
     position: sticky;
     padding-bottom: 40px;
-    max-width: 900px;
+    max-width: 600px;
     padding-top: 40vh;
     padding-bottom: 20vh;
 }
 
 .main-content {
   width: 100vw;
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .container {
@@ -113,7 +117,7 @@ img {
 }
 
 .container-post p {
-  max-width: 700px;
+  max-width: 500px;
   margin: 20px 0 20px 0;
 }
 
@@ -169,6 +173,7 @@ img {
 
 #about-me p {
   margin: 0 0 10px 0;
+  max-width: 400px;
 }
 
 #about-me h3 {
@@ -180,16 +185,27 @@ img {
   font-size: 1.2rem;
 }
 
-#about-me .container-post {
+.about-me-content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.me-header {
+  padding-bottom: 40px;
+}
+
+.about-me-content.text {
+  flex-direction: column;
+}
+
+#about-me .container-post {
   position: relative;
 }
 
 #about-me .category {
   margin-bottom: 20px;
-  width: 100%;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 }
 
 #about-me .category p {
@@ -198,17 +214,22 @@ img {
 
 #about-me .container-post img {
   width: 150px;
-  border-radius: 10px;
+  height: 150px;
+  padding: 0 0 2px 2px;
+  border-radius: 100%;
   mix-blend-mode: luminosity;
   object-fit: cover;
+  float: right;
 }
 
+
 .menu {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    row-gap: 10px;
 }
 
 .menu a {
