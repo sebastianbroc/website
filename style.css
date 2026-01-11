@@ -6,13 +6,21 @@ a {
     color: white;
 }
 
+p {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+h2, h3, h4 {
+  margin: 0;
+}
+
 h2 {
   font-size: 2rem;
 }
 
 h3 {
   font-size: 1.4rem;
-  margin: 0;
 }
 
 body {
@@ -97,14 +105,20 @@ img {
   gap: 20px;
 }
 
-.container p {
-  max-width: 700px;
-}
-
 .container-post {
   border: solid 1px white;
   padding: 10px;
   border-radius: 8px;
+  margin-top: 20px;
+}
+
+.container-post p {
+  max-width: 700px;
+  margin: 20px 0 20px 0;
+}
+
+.container-post h4 {
+  margin: 0 0 8px 0;
 }
 
 .container-header {
@@ -141,11 +155,76 @@ img {
   white-space: nowrap;
 }
 
+.container .container-post.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.container .container-post.grid .single-tech img {
+  height: 60px;
+  object-fit: contain;
+  max-width: 200px;
+}
+
+#about-me p {
+  margin: 0 0 10px 0;
+}
+
+#about-me h3 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+#about-me h4 {
+  font-size: 1.2rem;
+}
+
+#about-me .container-post {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#about-me .category {
+  margin-bottom: 20px;
+  width: 100%;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+#about-me .category p {
+  margin-left: 20px;
+}
+
+#about-me .container-post img {
+  width: 150px;
+  border-radius: 10px;
+  mix-blend-mode: luminosity;
+  object-fit: cover;
+}
+
 .menu {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+a {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(0,0,0,0.8) 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  color: rgb(244, 228, 6);
+  background-position: -100% 0;
 }
 
 .footer {
