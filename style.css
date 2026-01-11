@@ -148,6 +148,10 @@ img {
     gap: 40px;
 }
 
+.footer {
+  padding: 10px 0 40px 0;
+}
+
   
   @-webkit-keyframes AnimateBG {
     0% {
