@@ -167,6 +167,11 @@ img {
   gap: 30px;
 }
 
+.container .container-post.grid.links {
+  flex-direction: column;
+  gap: 10px;
+}
+
 .container .container-post.grid .single-tech img {
   height: 60px;
   object-fit: contain;
